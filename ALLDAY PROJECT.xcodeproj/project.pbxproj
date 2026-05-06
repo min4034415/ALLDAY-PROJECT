@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D685A2902FA60BDE00AAFC84 /* May2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D685A28F2FA60BDE00AAFC84 /* May2.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D63CEBC02F7A658900316C4F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -20,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		D63CEBC22F7A658900316C4F /* ALLDAY PROJECT */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ALLDAY PROJECT"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D685A28F2FA60BDE00AAFC84 /* May2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = May2.swift; path = "ALLDAY PROJECT/Apr21/May2.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +49,7 @@
 		D63CEBB92F7A658900316C4F = {
 			isa = PBXGroup;
 			children = (
+				D685A28F2FA60BDE00AAFC84 /* May2.swift */,
 				D63CEBC42F7A658900316C4F /* ALLDAY PROJECT */,
 				D63CEBC32F7A658900316C4F /* Products */,
 			);
@@ -121,6 +127,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D685A2902FA60BDE00AAFC84 /* May2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
