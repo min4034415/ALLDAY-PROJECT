@@ -4,24 +4,54 @@
 //
 //  Created by Ouimin Lee on 5/6/26.
 //
-/*
- let boxGrid: [[[Character]]] = [[["#",".","#"]],[["#",".","*","."],["#","#","*","."]],[["#","#","*",".","*","."],["#","#","#","*",".","."],["#","#","#",".","#","."]]]
+
+ /*
+ let boxGrid: [[[Character]]] =
+  [[["#",".","#"]],
+  [["#",".","*","."],["#","#","*","."]],
+  [["#","#","*",".","*","."],["#","#","#","*",".","."],["#","#","#",".","#","."]]]
  */
 
 import Foundation
 
 class May6 {
-//    func rotateTheBox(_ boxGrid: [[Character]]) -> [[Character]] {
-//        
-//        let box = boxGrid
-//        let m = box.count
-//        let n = box[0].count
-//        
-//        
+    func rotateTheBox(_ boxGrid: [[Character]]) -> [[Character]] {
+        
+        var box = boxGrid
+        let m = box.count
+        let n = box[0].count
+        
+        
+        for r in 0..<m {
+            var theLowestPossible = n - 1
+            
+            for c in stride(from: n - 1, through: 0, by: -1) {
+                if box[r][c] == "*" {
+                    theLowestPossible = c - 1
+                } else if box[r][c] == "#" {
+                    box[r][c] = "."
+                    box[r][theLowestPossible] = "#"
+                    theLowestPossible -= 1
+                }
+            }
+        }
+        
+        var newArray = (0..<n).map {
+            _ in (0..<m).map {
+                _ in "." as Character
+            }
+        }
+        
+        for r in 0..<m {
+            for c in 0..<n {
+                newArray[c][m-1-r] = box[r][c]
+            }
+        }
+        
 //        print(boxGrid)
-//        return []
-//    }
-    func rotateTheBox(_ box: [[Character]]) -> [[Character]] {
+        return newArray
+    }
+    func rotateTheBox1(_ box: [[Character]]) -> [[Character]] {
         var box = box
         let m = box.count
         //박스의 개수를 세요 몇개인지 옆으로

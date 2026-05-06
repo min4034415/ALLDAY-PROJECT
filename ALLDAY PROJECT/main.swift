@@ -39,6 +39,9 @@ let boxGrid: [[[Character]]] = [[["#",".","#"]],[["#",".","*","."],
                                 ["#","#","*","."]],[["#","#","*",".","*","."],
                                                     ["#","#","#","*",".","."],
                                                     ["#","#","#",".","#","."]]]
-print(May6().rotateTheBox(boxGrid[0]))
-      
+//print(May6().rotateTheBox(boxGrid[0]))
+boxGrid.forEach {
+    print(May6().rotateTheBox($0))
+}
+
 #endif
