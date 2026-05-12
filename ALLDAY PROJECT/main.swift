@@ -51,10 +51,13 @@ let may9 = May9()
 may9.examples.forEach({ (ele, ment) in
     print(may9.minSubArrayLen(ele, ment))
 })
-#endif
-#if true
 
 let may11 = May11()
 may11.example.forEach({print(may11.separateDigits($0))})
+#endif
+#if true
+
+let may12 = May12()
+may12.example.forEach({print(may12.shortestPathBinaryMatrix($0))})
 #endif
 
