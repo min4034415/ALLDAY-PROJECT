@@ -33,8 +33,6 @@ print(Apr30().maximalSquare())
 var myMatrix = [[[1,2,3], [4,5,6], [7,8,9]],[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]]
 
 print(May4().rotate(&myMatrix[1]))
-#endif
-#if true
 let boxGrid: [[[Character]]] = [[["#",".","#"]],[["#",".","*","."],
                                 ["#","#","*","."]],[["#","#","*",".","*","."],
                                                     ["#","#","#","*",".","."],
@@ -43,5 +41,19 @@ let boxGrid: [[[Character]]] = [[["#",".","#"]],[["#",".","*","."],
 boxGrid.forEach {
     print(May6().rotateTheBox($0))
 }
+//let coins = [([1,2,5],11),([2],3),([1],0)]
+//coins.forEach {
+//    print(May7().coinChange($0.0, $0.1))
+//
+//}
+print(["I", "want"].joined())
+//print((String(123).reversed().compactMap{$0} as! [String]).joined() == String(123))
+print(String(Array("i wat to".split(separator: " ").joined().reversed())))
 
+var may10: May10 = .init()
+may10.examples.forEach({print(may10.maximumSubarraySum($0.0, $0.1))})
+#endif
+#if true
+var may15 = May15()
+may15.examples.forEach({print(may15.findMin($0))})
 #endif
