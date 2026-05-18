@@ -61,3 +61,13 @@ let may12 = May12()
 may12.example.forEach({print(may12.shortestPathBinaryMatrix($0))})
 #endif
 
+
+let may13 = May13()
+
+may13.example.forEach({print(may13.lengthOfLastWord($0))})
+
+let may14 = May14()
+
+may14.example.forEach {
+    print(may14.isGood($0))
+}
