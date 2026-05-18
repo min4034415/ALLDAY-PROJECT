@@ -33,8 +33,6 @@ print(Apr30().maximalSquare())
 var myMatrix = [[[1,2,3], [4,5,6], [7,8,9]],[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]]
 
 print(May4().rotate(&myMatrix[1]))
-#endif
-#if true
 let boxGrid: [[[Character]]] = [[["#",".","#"]],[["#",".","*","."],
                                 ["#","#","*","."]],[["#","#","*",".","*","."],
                                                     ["#","#","#","*",".","."],
@@ -43,5 +41,33 @@ let boxGrid: [[[Character]]] = [[["#",".","#"]],[["#",".","*","."],
 boxGrid.forEach {
     print(May6().rotateTheBox($0))
 }
+let examples = ["abcabcbb","bbbbb","pwwkew"]
 
+examples.forEach {
+    print(May8().lengthOfLongestSubstring($0))
+    print("---------")
+}
+let may9 = May9()
+may9.examples.forEach({ (ele, ment) in
+    print(may9.minSubArrayLen(ele, ment))
+})
+
+let may11 = May11()
+may11.example.forEach({print(may11.separateDigits($0))})
 #endif
+#if true
+
+let may12 = May12()
+may12.example.forEach({print(may12.shortestPathBinaryMatrix($0))})
+#endif
+
+
+let may13 = May13()
+
+may13.example.forEach({print(may13.lengthOfLastWord($0))})
+
+let may14 = May14()
+
+may14.example.forEach {
+    print(may14.isGood($0))
+}
