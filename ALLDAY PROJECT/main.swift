@@ -71,3 +71,13 @@ let may14 = May14()
 may14.example.forEach {
     print(may14.isGood($0))
 }
+
+let may19 = May19()
+may19.example.forEach { print(may19.getCommon($0.0, $0.1)) }
+
+let may20 = May20()
+may20.example.forEach({print(may20.findThePrefixCommonArray($0.0, $0.1))})
+
+let may23 = May23()
+
+may23.example.forEach({print(may23.check($0))})
