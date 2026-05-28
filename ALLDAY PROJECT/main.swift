@@ -72,6 +72,11 @@ may14.example.forEach {
     print(may14.isGood($0))
 }
 
+let may18 = May18()
+may18.example.forEach({print(may18.minJumps($0))})
+
+let may21 = May21()
+may21.example.forEach({print(may21.longestCommonPrefix($0.0, $0.1))})
 let may19 = May19()
 may19.example.forEach { print(may19.getCommon($0.0, $0.1)) }
 
