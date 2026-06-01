@@ -95,3 +95,6 @@ may28.examples.forEach({
 
 let may30 = May30()
 may30.examples.forEach({print(may30.mySqrt($0))})
+
+let jun1 = Jun1()
+jun1.examples.forEach({print(jun1.minimumCost($0))})
