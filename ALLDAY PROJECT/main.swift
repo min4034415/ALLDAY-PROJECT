@@ -86,3 +86,12 @@ may20.example.forEach({print(may20.findThePrefixCommonArray($0.0, $0.1))})
 let may23 = May23()
 
 may23.example.forEach({print(may23.check($0))})
+
+let may28 = May28()
+may28.examples.forEach({
+    let tree = may28.buildTree($0)
+    print(may28.maxDepth(tree))
+})
+
+let may30 = May30()
+may30.examples.forEach({print(may30.mySqrt($0))})
