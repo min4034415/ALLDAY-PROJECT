@@ -54,6 +54,42 @@ may9.examples.forEach({ (ele, ment) in
 
 let may11 = May11()
 may11.example.forEach({print(may11.separateDigits($0))})
+//let coins = [([1,2,5],11),([2],3),([1],0)]
+//coins.forEach {
+//    print(May7().coinChange($0.0, $0.1))
+//
+//}
+print(["I", "want"].joined())
+//print((String(123).reversed().compactMap{$0} as! [String]).joined() == String(123))
+print(String(Array("i wat to".split(separator: " ").joined().reversed())))
+
+var may10: May10 = .init()
+may10.examples.forEach({print(may10.maximumSubarraySum($0.0, $0.1))})
+
+var may15 = May15()
+may15.examples.forEach({print(may15.findMin($0))})
+
+var may17 = May17()
+may17.examples.forEach({print(may17.canReach($0.0, $0.1))})
+
+let may25 = May25()
+
+may25.example.forEach {
+    print(may25.canReach($0.0, $0.1, $0.2))
+}
+
+let may26 = May26()
+
+may26.examples.forEach {
+    print(may26.numberOfSpecialChars($0))
+}
+
+let may27 = May27()
+
+may27.examples.forEach({print(may27.numberOfSpecialChars($0))})
+
+let may31 = May31()
+may31.examples.forEach({print(may31.asteroidsDestroyed($0.0, $0.1))})
 #endif
 #if true
 
@@ -70,6 +106,11 @@ let may14 = May14()
 
 may14.example.forEach {
     print(may14.isGood($0))
+}
+
+let jun3: Jun3 = .init()
+jun3.examples.forEach {
+    print(jun3.earliestFinishTime($0.0, $0.1, $0.2, $0.3))
 }
 
 let may18 = May18()
