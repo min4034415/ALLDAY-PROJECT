@@ -118,3 +118,24 @@ may18.example.forEach({print(may18.minJumps($0))})
 
 let may21 = May21()
 may21.example.forEach({print(may21.longestCommonPrefix($0.0, $0.1))})
+let may19 = May19()
+may19.example.forEach { print(may19.getCommon($0.0, $0.1)) }
+
+let may20 = May20()
+may20.example.forEach({print(may20.findThePrefixCommonArray($0.0, $0.1))})
+
+let may23 = May23()
+
+may23.example.forEach({print(may23.check($0))})
+
+let may28 = May28()
+may28.examples.forEach({
+    let tree = may28.buildTree($0)
+    print(may28.maxDepth(tree))
+})
+
+let may30 = May30()
+may30.examples.forEach({print(may30.mySqrt($0))})
+
+let jun1 = Jun1()
+jun1.examples.forEach({print(jun1.minimumCost($0))})
