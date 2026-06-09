@@ -98,3 +98,24 @@ may30.examples.forEach({print(may30.mySqrt($0))})
 
 let jun1 = Jun1()
 jun1.examples.forEach({print(jun1.minimumCost($0))})
+
+let jun2 = Jun2()
+jun2.examples.forEach {
+    print(jun2.earliestFinishTime($0.0, $0.1, $0.2, $0.3))
+}
+
+let jun4: Jun4 = .init()
+jun4.examples.forEach { (num1, num2) in
+    print(jun4.totalWaviness(num1, num2))
+}
+
+let jun8: Jun8 = .init()
+jun8.examples.forEach { (arr, piv) in
+    print(jun8.pivotArray(arr, piv))
+}
+
+
+let jun9: Jun9 = .init()
+jun9.examples.forEach { (arr, nums) in
+    print(jun9.maxTotalValue(arr, nums))
+}
