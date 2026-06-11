@@ -165,3 +165,6 @@ let jun10: Jun10 = .init()
 jun10.examples.forEach { arr in
     print(jun10.singleNumber(arr))
 }
+
+let jun11: Jun11 = .init()
+jun11.examples.forEach({print(jun11.reverseString($0))})
