@@ -160,3 +160,8 @@ let jun9: Jun9 = .init()
 jun9.examples.forEach { (arr, nums) in
     print(jun9.maxTotalValue(arr, nums))
 }
+
+let jun10: Jun10 = .init()
+jun10.examples.forEach { arr in
+    print(jun10.singleNumber(arr))
+}
